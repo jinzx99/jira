@@ -29,5 +29,6 @@
     </conditions>
     <label key="schedule-web-item.label"/>
     <link linkId="schedule-web-item-link">/secure/SchedulerWebworkModuleAction!default.jspa?id=${issue.id}</link>
+    <styleClass>trigger-dialog</styleClass>
   </web-item>
 </atlassian-plugin>

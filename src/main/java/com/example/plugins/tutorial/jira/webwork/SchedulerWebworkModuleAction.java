@@ -83,7 +83,7 @@ public class SchedulerWebworkModuleAction extends JiraWebActionSupport
         }
 
         // We want to redirect back to the view issue page so
-        return getRedirect("/browse/" + update.getIssue().getKey());
+        return returnComplete("/browse/" + update.getIssue().getKey());
     }
 
     /**
