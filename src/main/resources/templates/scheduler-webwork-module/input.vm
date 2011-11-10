@@ -28,8 +28,8 @@
 
         <div class="buttons-container form-footer">
             <div class="buttons">
-                <input accesskey="s" class="button" id="assign-issue-submit" name="Assign" title="Press Ctrl+Alt+s to submit this form" type="submit" value="Assign">
-                <a accesskey="`" class="cancel" href="/browse/JRADEV-5237" id="assign-issue-cancel" title="Press Ctrl+Alt+` to cancel">Cancel</a>
+                <input accesskey="s" class="button" id="schedule-issue-submit" name="Schedule" title="Press Ctrl+Alt+s to submit this form" type="submit" value="Schedule">
+                <a accesskey="`" class="cancel" href="/browse/${action.issue.key}" id="schedule-issue-cancel" title="Press Ctrl+Alt+` to cancel">Cancel</a>
             </div>
         </div>
     </form>
