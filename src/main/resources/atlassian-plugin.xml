@@ -28,7 +28,17 @@
       </condition>
     </conditions>
     <label key="schedule-web-item.label"/>
-    <link linkId="schedule-web-item-link">/secure/SchedulerWebworkModuleAction!default.jspa?id=${issue.id}</link>
-    <styleClass>trigger-dialog</styleClass>
+    <link linkId="schedule-web-item-link">/secure/SchedulerWebworkModuleAction!default.jspa?id=${issueId}</link>
+    <styleClass>issueaction-schedule-issue</styleClass>
   </web-item>
+  <web-resource name="Scheduler Web Resource" i18n-name-key="scheduler-web-resource.name" key="scheduler-web-resource">
+    <description key="scheduler-web-resource.description">The Scheduler Web Resource Plugin</description>
+    <context>jira.general</context>
+    <transformation extension="js">
+      <transformer key="jsI18n"/>
+    </transformation>
+    <resource type="download" name="scheduler.js" location="javascript/scheduler.js">
+      <property key="content-type" value="text/javascript"/>
+    </resource>
+  </web-resource>
 </atlassian-plugin>
